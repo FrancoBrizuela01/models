@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+*::selection {
+    background-color: #E1D8CF;
+    color: #683C11;
+}
+
+                /*ABOUT ME*/
+
+.container-head{
+    background: rgb(27, 27, 27);
+    display: none;
+    font-family: 'PT Sans', sans-serif;
+    margin: auto;
+    padding: 20px;
+}
+
+.aboutme p{
+    color: #6c757d;
+}
+
+.aboutme h4, h5{
+    color: white;
+}
+
+.contact{
+    margin-left: 100px !important;
+}
+
+.contact li{
+    list-style: none;
+    color: white;   
+}
+
+.contact ul a{
+    color: white; 
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.contact ul a:hover{
+    letter-spacing: 2px;
+
+}
+
+.contact i{
+    padding: 5px;  
+}
+
+                    /*NAV*/
+
+.container-nav{
+    display: flex;
+    background: rgb(27, 27, 27);
+    padding: 10px;
+}
+
+.btn-page{  
+    align-items: left;
+    width: 150px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.btn-page:focus{
+    background-color: transparent;
+}
+
+
+.btn-menu{
+    align-items: right;
+    margin-left: 80%;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+.btn-menu:hover{
+    border: 1px solid #fff;
+    font-size: 10px;
+}
+
+.btn-menu:active{
+    transform: rotate(0.5turn);
+}
+
+.btn-menu:focus{
+    background-color: transparent;
+    
+}
+
+.titulo{
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top: 120px;
+}
+
+.parrafo{   
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+.galeria img{
+    box-shadow: 0 10px -4px rgba(0, 0, 0, .6);
+    border-radius: 15px;
+}
+
+.galeria .col{
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container-head{
+        flex-wrap: wrap;
+    }
+    .container-head h4, h5, p{
+        text-align: center;
+    }
+    .contact{
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+    .contact a{
+        display: none;
+    }
+    .contact ul{
+        display: flex;
+        margin-top: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact i{
+        font-size: 20px;
+    }
+    .contact li{
+        margin-right: 15px;
+    }
+    .btn-page{
+        position: absolute;
+    }
+    footer p{
+        text-align: center;
+    }
+    footer ul{
+        text-align: center;
+        margin-left: 25px;
+    }
+    .parrafo{
+        padding: 10px;
+    }
+}
+
+
+
